@@ -2,7 +2,7 @@ package htmldoc
 
 import (
 	"fmt"
-	"github.com/wjdp/htmltest/output"
+	"github.com/cockroachdb/htmltest/output"
 	"golang.org/x/net/html"
 	"os"
 	"path"

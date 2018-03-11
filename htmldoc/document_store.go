@@ -4,7 +4,7 @@
 package htmldoc
 
 import (
-	"github.com/wjdp/htmltest/output"
+	"github.com/cockroachdb/htmltest/output"
 	"os"
 	"path"
 	"regexp"

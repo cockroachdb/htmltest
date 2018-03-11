@@ -2,7 +2,7 @@ package issues
 
 import (
 	"github.com/daviddengcn/go-assert"
-	"github.com/wjdp/htmltest/htmldoc"
+	"github.com/cockroachdb/htmltest/htmldoc"
 	"testing"
 )
 

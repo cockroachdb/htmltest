@@ -2,7 +2,7 @@ package htmltest
 
 import (
 	"github.com/daviddengcn/go-assert"
-	"github.com/wjdp/htmltest/output"
+	"github.com/cockroachdb/htmltest/output"
 	"testing"
 )
 

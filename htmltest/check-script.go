@@ -1,8 +1,8 @@
 package htmltest
 
 import (
-	"github.com/wjdp/htmltest/htmldoc"
-	"github.com/wjdp/htmltest/issues"
+	"github.com/cockroachdb/htmltest/htmldoc"
+	"github.com/cockroachdb/htmltest/issues"
 	"golang.org/x/net/html"
 )
 

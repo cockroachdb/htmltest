@@ -1,7 +1,7 @@
 package htmldoc
 
 import (
-	"github.com/wjdp/htmltest/output"
+	"github.com/cockroachdb/htmltest/output"
 	"golang.org/x/net/html"
 	"net/url"
 	"path"

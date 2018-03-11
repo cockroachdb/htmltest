@@ -3,7 +3,7 @@ package htmltest
 import (
 	"fmt"
 	"github.com/imdario/mergo"
-	"github.com/wjdp/htmltest/issues"
+	"github.com/cockroachdb/htmltest/issues"
 	"path"
 	"reflect"
 	"regexp"
