@@ -298,8 +298,13 @@ func (hT *HTMLTest) checkInternalHash(ref *htmldoc.Reference) {
 
 	if len(ref.URL.Path) > 0 {
 		// internal
-		refDoc, _ := hT.documentStore.ResolveRef(ref)
-		if !refDoc.IsHashValid(ref.URL.Fragment) {
+		if refDoc, ok := hT.documentStore.ResolveRef(ref); !ok {
+			hT.issueStore.AddIssue(issues.Issue{
+				Level:     issues.LevelError,
+				Message:   "missing reference",
+				Reference: ref,
+			})
+		} else if !refDoc.IsHashValid(ref.URL.Fragment) {
 			hT.issueStore.AddIssue(issues.Issue{
 				Level:     issues.LevelError,
 				Message:   "hash does not exist",
