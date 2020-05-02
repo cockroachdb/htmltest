@@ -48,7 +48,7 @@ func Test(optsUser map[string]interface{}) (*HTMLTest, error) {
 
 	// Create issue store and set LogLevel and printImmediately if sort is seq
 	hT.issueStore = issues.NewIssueStore(hT.opts.LogLevel,
-		(hT.opts.LogSort == "seq"))
+		true)//(hT.opts.LogSort == "seq"))
 
 	transport := &http.Transport{
 		// Disable HTTP/2, this is required due to a number of edge cases where http negotiates H2, but something goes
